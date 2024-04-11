@@ -6,6 +6,8 @@ To do:
 
 -Create php link to create a separate navbar file to later link to site on all pertinant pages
 
+-Add OG Metas to the files and create thumbnail for Social Media cards
+
 -Add Cookies and Cookie Disclaimer/Consent and Privacy Information prompts
 
 -Add Form on Contact page with proper placeholders and information gathering prompts
