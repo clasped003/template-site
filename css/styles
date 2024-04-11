@@ -1,0 +1,393 @@
+/*Global*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Body and Global Grid Container*/
+
+body{
+    min-height: 100vh;
+    width: auto;
+    font: 14px/1.5 "Comfortaa", Arial;
+    background-color: rgba(244, 244, 244, 0.338);
+    background-image: url("../img/double-bubble-outline.webp");
+    background-repeat: fill;
+    background-size: 300px 350px;
+    /*Remove below for site, just for testing*/
+    border: 5px dashed black;
+    overflow-block:scroll;
+}
+
+.gridContainer {  
+    min-height: 100vh;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 5em 7em 4em max-content 1fr 1fr .5fr;
+    gap: 0em 0em;
+    grid-auto-flow: row;
+
+    /*grid-template-areas:
+      ". . . ."
+      ". . . ."
+      ". . . ."
+      ". . . ."
+      ". . . .";*/
+    overflow-block: scroll;
+    /*Remove below for site, just for testing*/
+    border: 5px solid pink;
+  }
+  
+  /*Header, A.K.A gridItem1*/
+.Header{
+    grid-row: 1 / 2;
+    grid-column: 1 / 5;
+    padding: .6em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+    background: rgba(59,142,164,0.93);
+    color: #ffffff;
+    border-bottom:#649fae 3px solid;
+    height: auto;
+    width: 100vw;
+    position: fixed;
+    z-index: 5;
+    /*Remove below for site, just for testing*/
+    border: 5px dashed green;
+}
+
+/*Navbar - Inside of Header*/
+.navContainer{
+    width: 60%;
+}
+
+.navContainer ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    width: auto;
+}
+
+ul li{
+    list-style: none;
+    display: flex;
+}
+
+ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .9em;
+    font-weight: 800;
+    margin: .1em;
+}
+
+.Header .current a{
+    color: #6ec4d9;
+    font-weight: bold;
+
+}
+
+ul li a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    color: #649fae;
+    position: relative;
+    background: #9efc4b8a;
+    transition: width 0.15s ease 0s, left 0s ease 0s;
+    width: 0;
+  }
+  :hover:after { 
+    width: 90%; 
+    right: 0; 
+    
+  }
+  @media screen and (max-height: 300px) {
+      ul {
+          margin-top: 40px;
+      }
+  }
+  
+.Header a:hover{
+    color: #6ec4d9;
+    font-weight: bold;
+    text-shadow: 2px 2px 15 10 #52cbee;
+}
+/*Showcase, A.K.A gridItem2*/
+.Showcase{
+    grid-row: 1 / 4;
+    grid-column: 1 / 5;
+    z-index: -2;
+    width: 100%;  /*change as needed/wanted*/
+    background: url("../img/showcase.png") no-repeat center center;
+    height: auto;
+    min-height: 15em;
+    max-height: 15em;
+    color: rgba(0, 0, 0, 0.505);
+    background-position-x: 60%;
+    background-position-y: 55%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /*Remove below for site, just for testing*/
+    border: 5px solid red;
+}
+
+.Showcase h2{ 
+    font-size: 37px;
+    /*Animation to fade in stuff pt1*/
+    animation: fadeInAnimation ease 1.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+    /*Animation to fade in stuff pt2*/
+@keyframes fadeInAnimation {
+    0% {
+        color: rgba(whitesmoke, 0, 0, 0.01);
+        font-size: 34px;
+        filter: blur(3.5px);
+        
+    }
+
+    75% {
+        filter: blur(0px);
+
+    }
+    100% {
+        color: rgba(0, 0, 0, 0.5.5);
+        font-size: 37px;
+    }
+}
+
+/*Midline, A.K.A gridItem3*/
+.Midline{
+    grid-row: 4 / 5;
+    grid-column: 1 / 5;
+    padding: 1em;
+    background: rgba(239, 195, 129, 0.199);
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /*Remove below for site, just for testing*/
+    border-style: dashed;
+    border-width: 5px;
+    border-color: yellow;
+    margin: .2em;
+}
+
+.Midline a{
+    text-decoration: none;
+}
+
+/*indexBody A.K.A gridItem4*/
+.indexBody{
+    grid-row: 5 / 8;
+    grid-column: 1 / 5;
+    height: auto;
+    margin: .2em;
+    padding: .5em;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    /*Remove below for site, just for testing*/
+    border-style: dashed;
+    border-width: 5px;
+    border-color: orange;
+}
+
+.indexBoxContainer{
+    height: auto;
+    width: auto;
+    
+} 
+
+.indexBox{
+    height: 45vh;
+}
+/*aboutBody A.K.A gridItem4*/
+/*Consider making one for 
+each individual page to allow for 
+modification individually*/
+/*About section containers for Body*/
+.aboutBody{
+    grid-row: 5 / 8;
+    grid-column: 1 / 5;
+    height: 100%;
+    margin: .2em;
+    padding: .5em;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*Remove below for site, just for testing*/
+    border-style: dashed;
+    border-width: 5px;
+    border-color: orange;
+}
+
+.aboutBoxContainer{
+    width: 80%;
+    height: auto;
+    margin-bottom: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 auto;
+    padding: 5% 7% 5% 7%;
+    background-color: rgba(219, 219, 186, 0.228);
+    border: 1px solid #649fae;
+    border-radius: 15px;
+    -webkit-box-shadow: -2px 5px 11px 4px rgba(0,0,0,0.4); 
+    box-shadow: -2px 5px 11px 4px rgba(0,0,0,0.3);
+}
+
+.aboutBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 auto;
+    /**/
+    border: 5px dashed #649fae;
+
+}
+
+/*Services section containers for Body*/
+.servicesBody{
+    grid-row: 5 / 8;
+    grid-column: 1 / 5;
+    height: auto;
+    margin: .2em;
+    padding: .5em;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*Remove below for site, just for testing*/
+    border-style: dashed;
+    border-width: 5px;
+    border-color: orange;
+}
+
+.servicesBoxContainer{
+    width: 80%;
+    height: auto;
+    margin-bottom: 4em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-between;
+    
+    padding: 5% 7% 5% 7%;
+    background-color: rgba(219, 219, 186, 0.228);
+    border: 1px solid #649fae;
+    border-radius: 15px;
+    -webkit-box-shadow: -2px 5px 11px 4px rgba(0,0,0,0.4); 
+    box-shadow: -2px 5px 11px 4px rgba(0,0,0,0.3);
+}
+
+.servicesBox{
+    height: 20em;
+    width: 15em;
+    margin: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /*Remove below for site, just for testing*/
+    border: 5px dashed #649fae;
+
+}
+
+/*contactBody A.K.A gridItem4*/
+/*Consider making one for 
+each individual page to allow for 
+modification individually*/
+/*Contact section containers for Body*/
+.contactBody{
+    grid-row: 5 / 8;
+    grid-column: 1 / 5;
+    height: auto;
+    margin: .2em;
+    padding: .5em;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*Remove below for site, just for testing*/
+    border-style: dashed;
+    border-width: 5px;
+    border-color: orange;
+}
+
+.contactBoxContainer{
+    width: 80%;
+    height: auto;
+    margin-bottom: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 auto;
+    padding: 5% 7% 5% 7%;
+    background-color: rgba(219, 219, 186, 0.228);
+    border: 1px solid #649fae;
+    border-radius: 15px;
+    -webkit-box-shadow: -2px 5px 11px 4px rgba(0,0,0,0.4); 
+    box-shadow: -2px 5px 11px 4px rgba(0,0,0,0.3);
+}
+
+.contactBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 auto;
+    /**/
+    border: 5px dashed #649fae;
+
+}
+
+
+
+    /*Footer A.K.A gridItem5*/
+.Footer{
+    grid-row: 14 / 15;
+    grid-column: 1 / 5;
+    min-height: 4em;
+    width: 97.5%!important; 
+    padding: .5em;
+    color: #ffffff;
+    background-color:#649fae;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    /*Remove below for site, just for testing*/
+    border: 5px dashed purple;
+}
