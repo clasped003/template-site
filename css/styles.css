@@ -399,6 +399,8 @@ modification individually*/
     justify-content: center;
     align-items: center;
     z-index: 5;
+    position: absolute; /*set to fixed if you want it to stick*/
+    bottom: 0; /*makes it go to the bottom*/
     /*Remove below for site, just for testing*/
     border: 5px dashed purple;
 }
