@@ -6,7 +6,7 @@
         <meta name="description" content="">
         <meta name="keywords" content="">
         <meta name="author" content="Author">
-        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/styles.css?v=<?php echo time(); ?>">
         <style>
             <!-- Custom Font URL -->
             @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Dosis:wght@200..800&display=swap')
@@ -40,16 +40,21 @@
             <h2>Services Body Part</h2>
             <div class="servicesBoxContainer">
                 <div class="servicesBox">
-                    <!--<img src="./img/headshotpic.png" alt="#">-->
+                    <div class="servicesBoxCover">
+                        <h2>Standard Services</h2>
+                    </div>
                 </div>
                 <div class="servicesBox">
                     <!--<img src="./img/headshotpic.png" alt="#">-->
+                    <h2>Additional Service</h2>
                 </div>
                 <div class="servicesBox">
                     <!--<img src="./img/headshotpic.png" alt="#">-->
+                    <h2>Specialty Service</h2>
                 </div>
                 <div class="servicesBox">
                     <!--<img src="./img/headshotpic.png" alt="#">-->
+                    <h2>Setup and Training</h2>
                 </div>
         </div>
         <div class="Footer">
