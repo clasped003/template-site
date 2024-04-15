@@ -164,8 +164,9 @@ ul li a:after {
 
     }
     100% {
-        color: rgba(0, 0, 0, 0.5.5);
+        color: rgba(0, 0, 0, 0.6);
         font-size: 37px;
+        letter-spacing: 5px;
     }
 }
 
@@ -271,6 +272,28 @@ modification individually*/
 
 }
 
+.staffPhoto1{
+    height:15em;
+    width: 10em;
+    background: url("../img/person1.png") no-repeat center center;
+    background-size: cover;
+    /*Border for photo*/
+    border: 1px solid #294e58;
+    -webkit-box-shadow: 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.staffPhoto2{
+    height:15em;
+    width: 10em;
+    background: url("../img/person2.png") no-repeat center center;
+    background-size: cover;
+    /*Border for photo*/
+    border: 1px solid #294e58;
+    -webkit-box-shadow: 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
 /*Services section containers for Body*/
 .servicesBody{
     grid-row: 5 / 8;
@@ -296,7 +319,7 @@ modification individually*/
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: space-between;
+    align-items: space-evenly;
     
     padding: 5% 7% 5% 7%;
     background-color: rgba(219, 219, 186, 0.228);
@@ -308,28 +331,151 @@ modification individually*/
 
 .servicesBox{
     height: 20em;
-    width: 15em;
-    margin: 3em;
+    width: 12em;
+    margin: 2em;
     padding: 2em;
     background: url("../img/bookkeeping.png") no-repeat center center;
     background-size: cover;
-    
-    /*Remove below for site, just for testing*/
-    border: 5px solid #649fae;
+    overflow: hidden;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -webkit-transition: all 0.5s ease;
+
+    /*Border for information*/
+    border: 2px solid #649fae;
+    border-radius: 15px;
 }
+
+.servicesBox:hover{
+    filter: grayscale(0%);
+    filter: gray;
+    -webkit-filter: grayscale(0%);
+    filter: none;
+    transform: scale(1.02);
+    transition: 0.5s ease;
+}
+
 
 .servicesBoxCover{
     height: auto;
     width: auto;
     padding: 1em;
-    background-color: rgba(219, 219, 186, 0.642);
+    background-color: rgba(219, 219, 186, 0.75);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     
-    /*Remove below for site, just for testing*/
-    border: 2px solid black;
+    /*Border for Information*/
+    border: 1px solid black;
+}
+
+.servicesBox2{
+    height: 20em;
+    width: 12em;
+    margin: 2em;
+    padding: 2em;
+    background: url("../img/officedesk.png") no-repeat center center;
+    background-size: cover;
+    
+    /*Border for information*/
+    border: 2px solid #649fae;
+    border-radius: 15px;
+}
+
+.servicesBoxCover2{
+    height: auto;
+    width: auto;
+    padding: 1em;
+    background-color: rgba(219, 219, 186, 0.75);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    /*Border for Information*/
+    border: 1px solid black;
+}
+
+.servicesBox3{
+    height: 20em;
+    width: 12em;
+    margin: 2em;
+    padding: 2em;
+    background: url("../img/cleanup.png") no-repeat center center;
+    background-size: cover;
+    
+    /*Border for information*/
+    border: 2px solid #649fae;
+    border-radius: 15px;
+}
+
+.servicesBoxCover3{
+    height: auto;
+    width: auto;
+    padding: 1em;
+    background-color: rgba(219, 219, 186, 0.75);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    /*Border for Information*/
+    border: 1px solid black;
+}
+
+.servicesBox4{
+    height: 20em;
+    width: 12em;
+    margin: 2em;
+    padding: 2em;
+    background: url("../img/payroll.png") no-repeat center center;
+    background-size: cover;
+    
+    /*Border for information*/
+    border: 2px solid #649fae;
+    border-radius: 15px;
+}
+
+.servicesBoxCover4{
+    height: auto;
+    width: auto;
+    padding: 1em;
+    background-color: rgba(219, 219, 186, 0.75);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    /*Border for Information*/
+    border: 1px solid black;
+}
+
+.servicesBox5{
+    height: 20em;
+    width: 12em;
+    margin: 2em;
+    padding: 2em;
+    background: url("../img/consulting.png") no-repeat center center;
+    background-size: cover;
+    
+    /*Border for information*/
+    border: 2px solid #649fae;
+    border-radius: 15px;
+}
+
+.servicesBoxCover5{
+    height: auto;
+    width: auto;
+    padding: 1em;
+    background-color: rgba(219, 219, 186, 0.75);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    /*Border for Information*/
+    border: 1px solid black;
 }
 
 /*contactBody A.K.A gridItem4*/
@@ -390,7 +536,8 @@ modification individually*/
     grid-row: 14 / 15;
     grid-column: 1 / 5;
     min-height: 4em;
-    width: 97.5%!important; 
+    width: auto;
+    /*width: 97.5%!important;*/
     padding: .5em;
     color: #ffffff;
     background-color:#649fae;
