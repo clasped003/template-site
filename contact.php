@@ -6,7 +6,7 @@
         <meta name="description" content="">
         <meta name="keywords" content="">
         <meta name="author" content="Author">
-        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/styles.css?v=<?php echo time(); ?>">
         <style>
             <!-- Custom Font URL -->
             @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Dosis:wght@200..800&display=swap')
