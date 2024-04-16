@@ -2,7 +2,8 @@
 A basic full-stack template site I am building using a basic WAMP setup with Laragon. 
 
 To do:
--Fix issue with Footer not properly staying out of Services body grid item
+
+x-Fix issue with Footer not properly staying out of Services body grid item
 
 -Create php link to create a separate navbar file to later link to site on all pertinant pages
 
@@ -14,5 +15,5 @@ To do:
 
 -Add Calendly or some other possible online scheduling option for someone to request a meeting time immediately
 
--Finish Services page, use JS and CSS to add sprinkle to the service options you will add
+x-Finish Services page, use JS and CSS to add sprinkle to the service options you will add
 
