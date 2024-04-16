@@ -337,25 +337,26 @@ modification individually*/
     background: url("../img/bookkeeping.png") no-repeat center center;
     background-size: cover;
     overflow: hidden;
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    -webkit-transition: all 0.5s ease;
-
     /*Border for information*/
     border: 2px solid #649fae;
     border-radius: 15px;
 }
 
-.servicesBox:hover{
-    filter: grayscale(0%);
-    filter: gray;
-    -webkit-filter: grayscale(0%);
-    filter: none;
-    transform: scale(1.02);
+/*Hover effects for Service listing boxes*/
+.servicesBox, .servicesBox2, .servicesBox3, .servicesBox4, .servicesBox5{
+    -webkit-transition: all 0.5s ease;
+}
+.servicesBox:hover, .servicesBox2:hover, .servicesBox3:hover, .servicesBox4:hover, .servicesBox5:hover{
+    transform: scale(1.01);
     transition: 0.5s ease;
+    -webkit-box-shadow: 5px 5px 15px 9px #294e5869; 
+    box-shadow: 5px 5px 15px 9px #294e5869;
+    /*box-shadow: 5px 5px 15px 5px #294e5869;*/
+    border: 2px solid #e0dada;
+    border-radius: 15px;
 }
 
-
+/*Box that houses the font inside of the Service Boxes*/
 .servicesBoxCover{
     height: auto;
     width: auto;
