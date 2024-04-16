@@ -38,24 +38,79 @@
         <div class="servicesBody">
             <!--Below element for testing only-->
             <h2>Services Body Part</h2>
+            <!-- Service Section -->
             <div class="servicesBoxContainer">
                 <div class="servicesBox">
                     <div class="servicesBoxCover">
                         <h2>Standard Services</h2>
                     </div>
+                    <br>
+                    <br>
+                    <div class="servicesBoxCover">
+                        <ul>
+                            <li>- Service 1</li>
+                            <li>- Service 2</li>
+                            <li>- Service 3</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="servicesBox">
-                    <!--<img src="./img/headshotpic.png" alt="#">-->
-                    <h2>Additional Service</h2>
+                <div class="servicesBox2">
+                    <div class="servicesBoxCover2">
+                        <h2>Additional Service</h2>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="servicesBoxCover">
+                        <ul>
+                            <li>- Service 1</li>
+                            <li>- Service 2</li>
+                            <li>- Service 3</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="servicesBox">
-                    <!--<img src="./img/headshotpic.png" alt="#">-->
-                    <h2>Specialty Service</h2>
+                <div class="servicesBox3">
+                    <div class="servicesBoxCover3">
+                        <h2>Business Cleanup</h2>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="servicesBoxCover">
+                        <ul>
+                            <li>- Service 1</li>
+                            <li>- Service 2</li>
+                            <li>- Service 3</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="servicesBox">
-                    <!--<img src="./img/headshotpic.png" alt="#">-->
-                    <h2>Setup and Training</h2>
+                <div class="servicesBox4">
+                    <div class="servicesBoxCover4">
+                        <h2>Payroll Services</h2>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="servicesBoxCover">
+                        <ul>
+                            <li>- Service 1</li>
+                            <li>- Service 2</li>
+                            <li>- Service 3</li>
+                        </ul>
+                    </div>
                 </div>
+                <div class="servicesBox5">
+                    <div class="servicesBoxCover5">
+                        <h2>Software Consultation</h2>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="servicesBoxCover">
+                        <ul>
+                            <li>- Service 1</li>
+                            <li>- Service 2</li>
+                            <li>- Service 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="Footer">
             <!--Below element for testing only-->
