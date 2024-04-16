@@ -17,3 +17,5 @@ x-Fix issue with Footer not properly staying out of Services body grid item
 
 x-Finish Services page, use JS and CSS to add sprinkle to the service options you will add
 
+-Add 404 page for redirect
+
