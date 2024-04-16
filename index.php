@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+        <!--Initial Meta Tags-->
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="keywords" content="">
         <meta name="author" content="Author">
+
+        <!--Meta OG Tags-->
+        <meta property="og:title" content="A Basic HTML5 Template">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="#">
+        <meta property="og:description" content="A simple HTML5 Template for new projects.">
+        <meta property="og:image" content="image.png">
         <link rel="stylesheet" href="./css/styles.css?v=<?php echo time(); ?>">
         <style>
             <!-- Custom Font URL -->
@@ -48,9 +56,7 @@
             <h2>Footer Part</h2>
             <p>Proudly serving the Local area community since 20xx</p>
         </div>
-
     </section>
- 
 	<script src="index.js"></script>
   </body>
 </html>
