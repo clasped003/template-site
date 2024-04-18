@@ -345,6 +345,9 @@ modification individually*/
 /*Hover effects for Service listing boxes*/
 .servicesBox, .servicesBox2, .servicesBox3, .servicesBox4, .servicesBox5{
     -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    transform-origin: center center;
+    filter: brightness(90%);
 }
 .servicesBox:hover, .servicesBox2:hover, .servicesBox3:hover, .servicesBox4:hover, .servicesBox5:hover{
     transform: scale(1.01);
@@ -354,6 +357,7 @@ modification individually*/
     /*box-shadow: 5px 5px 15px 5px #294e5869;*/
     border: 2px solid #e0dada;
     border-radius: 15px;
+    filter: brightness(100%);
 }
 
 /*Box that houses the font inside of the Service Boxes*/
@@ -530,7 +534,17 @@ modification individually*/
 
 }
 
+    /*Contact page submit button*/
+#button{
+    width: 20em;  height: 2em;
+    background-color: white;
 
+}
+
+#button:hover{
+    -webkit-box-shadow: -2px 5px 11px 4px rgba(0,0,0,0.4); 
+    box-shadow: -2px 5px 11px 4px rgba(0,0,0,0.3);
+}
 
     /*Footer A.K.A gridItem5*/
 .Footer{
