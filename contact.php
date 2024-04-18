@@ -49,12 +49,67 @@
             <div class="contactBoxContainer">
                 <div class="contactBox">
                     <!--<img src="./img/headhsotpic.png" alt="#">-->
-                    <h3>To contact:</h3>
-                    <p> If you are interested in learning more about how our Professional services can aid your business:<br><p>Please click below to Email Us at:</p>
-                        <a href="mailto:support@professional-website.com">support@proffesional-website.com</a><br>
+                    <h3>For general questions:</h3>
+                    <p> If you have any specific questions about how our Professional services can aid your business,
+                    <br>
+                    <p>Please click below to Email Us at:</p>
+                    <a href="mailto:support@professional-website.com">support@proffesional-website.com</a>
+                    Or call: (000) 125-4567</p>
+                    <br>
+                    <h3>To request service:</h3>
+                    <p>Otherwise, please fill out the following form and submit
+                    <br>if you wish to discuss further business matters with us!</p>
+                    <br>
+                    <p>(All Fields Required)</p>
+                    <br>
+                    <form method="POST" action="#">
+                        <label for="fname">First name:</label>
                         <br>
-                        Or call: (000) 125-4567                      
-                    </p>
+                        <input type="text" id="fname" name="fname" required>
+                        <br>
+                        <br>
+                        <label for="lname">Last name:</label>
+                        <br>
+                        <input type="text" id="lname" name="lname" required>
+                        <br>
+                        <br>
+                        <label for="hstate">Your state of residence:</label>
+                        <br>
+                        <input type="text" id="hstate" name="hstate" required>
+                        <br>
+                        <br>
+                        <label for="email">Your email:</label>
+                        <br>
+                        <input type="email" id="email" name="email" required>
+                        <br>
+                        <br>
+                        <label for="phone">Best phone number to reach you:<br>
+                        <small>Enter in this Format: 123-456-7890</small><br>
+                        </label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+                        <br>
+                        <br>
+                        <p>Which Services are you interested in?</p>
+                        <br>
+                        <input type="checkbox" id="service1" name="service1" value="service1">
+                        <label for="service1"> Service 1</label><br>
+                        <input type="checkbox" id="service2" name="service2" value="service2">
+                        <label for="service2"> Service 2</label>
+                        <input type="checkbox" id="service3" name="service3" value="service3">
+                        <label for="service3"> Service 3</label><br>
+                        <input type="checkbox" id="service4" name="service4" value="service4">
+                        <label for="service4"> Service 4</label>
+                        <input type="checkbox" id="service5" name="service5" value="service5">
+                        <label for="service5"> Service 5</label><br>
+                        <br>
+                        <br>
+                        <p>Once you press Submit,
+                        <br> we will contact you within the next 24 hours.
+                        <br>
+                        <br>
+                        <input id="button" type="submit" value="Submit">
+
+                    </form>
                 </div>
             </div>
         </div>
